@@ -1,140 +1,751 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Scholarship tracker</title>
-      
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Scholarship tracker</title>
 
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-        <link href="css/tooplate-clean-work.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/tooplate-clean-work.css" rel="stylesheet">
 
 
-    </head>
-    
-    <body>
+</head>
 
-        <header class="site-header">
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-house-fill me-2"></i>
+                        <a href="https://ananyabchetia.github.io/">My portfolio page</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero-section hero-section-full-height d-flex justify-content-center align-items-center">
+            <div class="section-overlay"></div>
+
             <div class="container">
                 <div class="row">
-        
-                    <div class="col-lg-12 col-12 d-flex flex-wrap">
-                        <p class="d-flex me-4 mb-0">
-                            <i class="bi-house-fill me-2"></i>
-                            <a href="https://ananyabchetia.github.io/">My portfolio page</a>
-                        </p>
+
+                    <div class="col-lg-7 col-12 text-center mx-auto">
+                        <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                            <span>Tracking scholarships </span>
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">for International Students</b>
+                                <b>for Domestic Students</b>
+                                <b>under investigation</b>
+                            </span>
+                        </h1>
+
+                        <a class="custom-btn btn button button--atlas smoothscroll me-3" href="#intro-section">
+                            <span>Financial Aid database for international students</span>
+                        </a>
+
+                        <a class="custom-btn custom-border-btn custom-btn-bg-white btn button button--pan smoothscroll"
+                            href="#services-section">
+                            <span>Financial aid map </span>
+                        </a>
                     </div>
-        
+
                 </div>
             </div>
-        </header>
 
-        <main>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,224L40,229.3C80,235,160,245,240,250.7C320,256,400,256,480,240C560,224,640,192,720,176C800,160,880,160,960,138.7C1040,117,1120,75,1200,80C1280,85,1360,139,1400,165.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+                </path>
+            </svg>
+        </section>
 
-            <section class="hero-section hero-section-full-height d-flex justify-content-center align-items-center">
-                <div class="section-overlay"></div>
 
+        <section class="intro-section" id="intro-section">
+            <div class="container">
+                <div class="row justify-content-lg-center align-items-center">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="mb-4">Scholarships for international students</h2>
+
+                        <p>I scraped <a
+                                href="https://static1.squarespace.com/static/5d1ad956be52e800010a2502/t/64c9494d6759433a8746fda9/1690913102131/Financial+Aid+for+International+Noncitizens+Class+of+2026.pdf">PDFs</a>
+                            and <a href="http://127.0.0.1:3000/index.html#services-section">CollegeVine</a> to track all
+                            the scholarships provided to international students in U.S colleges from 2023. I will update
+                            the database as information rolls in! In the meantime check out the table below:</p>
+                    </div>
+
+
+                    <iframe title="List of U.S universities providing financial aid to international students in 2023 "
+                        aria-label="Table" id="datawrapper-chart-jtNuK" src="https://datawrapper.dwcdn.net/jtNuK/2/"
+                        scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;"
+                        height="400" data-external="1"></iframe>
+                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r, i = 0; r = e[i]; i++)if (r.contentWindow === a.source) { var d = a.data["datawrapper-height"][t] + "px"; r.style.height = d } } })) }();
+                    </script>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-section" id="services-section">
+            <div class="container">
+                <div class="row justify-content-lg-center align-items-center">
+
+                    <class=col-lg-6 col-12>
+                        <h2 class="mb-4">U.S Map that shows all universities providing financial aid to international
+                            students</h2>
+                        <p>The map helps international students and those curious on where institutions are located, to
+                            find the universities that provide financial aid or merit scholarships to students on visas.
+                        </p>
+                        <iframe src="map.html" width="100%" height="600" style="border:none;"></iframe>
+
+
+        </section>
+        </div>
+        </div>
+        <section class="intro-section" id="services-section">
+            <div class="container">
+                <div class="row justify-content-lg-center align-items-center">
+
+                    <class=col-lg-6 col-12>
+                        <h2 class="mb-4">Tracking scholarships under investigation</h2>
+                        <class=col-lg-6 col-12>
+                            <p>I've developed a scholarship database that tracks college scholarships that have quietly
+                                disappeared following
+                                investigations by the current administration and legal challenges from conservative
+                                nonprofits. Many of these
+                                scholarships were created to support minority students. My dataset highlights patterns
+                                (which scholarships are going
+                                away, which ones remain, etc.) and identifies which student populations are most
+                                vulnerable to these removals.</p>
+                            <p>Here are some highlights:</p>
+        </section>
+        </div>
+        </div>
+        <style media="screen,print">
+            #g-scholarship-box,
+            #g-scholarship-box .g-artboard {
+                margin: 0 auto;
+            }
+
+            #g-scholarship-box p {
+                margin: 0;
+            }
+
+            #g-scholarship-box .g-aiAbs {
+                position: absolute;
+            }
+
+            #g-scholarship-box .g-aiImg {
+                position: absolute;
+                top: 0;
+                display: block;
+                width: 100% !important;
+            }
+
+            #g-scholarship-box .g-aiSymbol {
+                position: absolute;
+                box-sizing: border-box;
+            }
+
+            #g-scholarship-box .g-aiPointText p {
+                white-space: nowrap;
+            }
+
+            #g-scholarship-full {
+                position: relative;
+                overflow: hidden;
+            }
+
+            #g-scholarship-full p {
+                font-family: arial, helvetica, sans-serif;
+                font-weight: bold;
+                line-height: 36px;
+                height: auto;
+                filter: alpha(opacity=100);
+                -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+                opacity: 1;
+                letter-spacing: 0em;
+                font-size: 30px;
+                text-align: left;
+                color: rgb(0, 0, 0);
+                text-transform: none;
+                padding-bottom: 0;
+                padding-top: 0;
+                mix-blend-mode: normal;
+                font-style: normal;
+                position: static;
+            }
+
+            #g-scholarship-full .g-pstyle0 {
+                height: 36px;
+            }
+
+            #g-scholarship-full .g-pstyle1 {
+                line-height: 22px;
+                height: 22px;
+                font-size: 18px;
+            }
+
+            #g-scholarship-full .g-pstyle2 {
+                line-height: 28px;
+                height: 28px;
+                font-size: 23px;
+            }
+
+            #g-scholarship-full .g-pstyle3 {
+                line-height: 23px;
+                height: 23px;
+                font-size: 19px;
+            }
+
+            #g-scholarship-medium {
+                position: relative;
+                overflow: hidden;
+            }
+
+            #g-scholarship-medium p {
+                font-family: arial, helvetica, sans-serif;
+                font-weight: bold;
+                line-height: 29px;
+                height: auto;
+                filter: alpha(opacity=100);
+                -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+                opacity: 1;
+                letter-spacing: 0em;
+                font-size: 24px;
+                text-align: left;
+                color: rgb(0, 0, 0);
+                text-transform: none;
+                padding-bottom: 0;
+                padding-top: 0;
+                mix-blend-mode: normal;
+                font-style: normal;
+                position: static;
+            }
+
+            #g-scholarship-medium .g-pstyle0 {
+                height: 29px;
+            }
+
+            #g-scholarship-medium .g-pstyle1 {
+                line-height: 22px;
+                height: 22px;
+                font-size: 18px;
+            }
+
+            #g-scholarship-medium .g-pstyle2 {
+                line-height: 23px;
+                height: 23px;
+                font-size: 19px;
+            }
+
+            #g-scholarship-medium .g-pstyle3 {
+                line-height: 19px;
+                height: 19px;
+                font-size: 16px;
+            }
+
+            #g-scholarship-mobile {
+                position: relative;
+                overflow: hidden;
+            }
+
+            #g-scholarship-mobile p {
+                font-family: arial, helvetica, sans-serif;
+                font-weight: bold;
+                line-height: 29px;
+                height: auto;
+                filter: alpha(opacity=100);
+                -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+                opacity: 1;
+                letter-spacing: 0em;
+                font-size: 24px;
+                text-align: left;
+                color: rgb(0, 0, 0);
+                text-transform: none;
+                padding-bottom: 0;
+                padding-top: 0;
+                mix-blend-mode: normal;
+                font-style: normal;
+                position: static;
+            }
+
+            #g-scholarship-mobile .g-pstyle0 {
+                height: 29px;
+            }
+
+            #g-scholarship-mobile .g-pstyle1 {
+                line-height: 23px;
+                height: 23px;
+                font-size: 19px;
+            }
+
+            #g-scholarship-mobile .g-pstyle2 {
+                line-height: 22px;
+                height: 22px;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            #g-scholarship-mobile .g-pstyle3 {
+                line-height: 22px;
+                height: 22px;
+                font-size: 18px;
+            }
+
+            #g-scholarship-mobile .g-pstyle4 {
+                line-height: 19px;
+                height: 19px;
+                font-size: 16px;
+            }
+        </style>
+
+        <div id="g-scholarship-box" class="ai2html">
+
+            <!-- Artboard: full -->
+            <div id="g-scholarship-full" class="g-artboard" style="width:700px; height:408px;" data-aspect-ratio="1.716"
+                data-min-width="700">
+                <div style=""></div>
+                <img id="g-scholarship-full-img" class="g-aiImg" alt="" src="scholarship-full.png" />
+                <div id="g-ai0-1" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:12.6264%;margin-top:-39.5px;left:1.5751%;width:619px;">
+                    <p class="g-pstyle0">Universities that have removed or altered </p>
+                    <p class="g-pstyle0">scholarships </p>
+                </div>
+                <div id="g-ai0-2" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:26.6289%;margin-top:-12.6px;left:37.1164%;width:42px;">
+                    <p class="g-pstyle1">25</p>
+                </div>
+                <div id="g-ai0-3" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:36.6779%;margin-top:-12.6px;left:37.2026%;width:42px;">
+                    <p class="g-pstyle1">20</p>
+                </div>
+                <div id="g-ai0-4" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:48.0153%;margin-top:-29.9px;left:15.5309%;width:141px;">
+                    <p class="g-pstyle2">Number of </p>
+                    <p class="g-pstyle2">Universities</p>
+                </div>
+                <div id="g-ai0-5" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:46.4819%;margin-top:-12.6px;left:37.1175%;width:42px;">
+                    <p class="g-pstyle1">15</p>
+                </div>
+                <div id="g-ai0-6" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:55.5505%;margin-top:-12.6px;left:37.2792%;width:42px;">
+                    <p class="g-pstyle1">10</p>
+                </div>
+                <div id="g-ai0-7" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:68.0014%;margin-top:-23.4px;left:38.3455%;width:32px;">
+                    <p class="g-pstyle1">5</p>
+                </div>
+                <div id="g-ai0-8" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:75.4034%;margin-top:-12.6px;left:38.246%;width:32px;">
+                    <p class="g-pstyle1">0</p>
+                </div>
+                <div id="g-ai0-9" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:80.9404%;margin-top:-13.2px;left:59.7868%;width:123px;">
+                    <p class="g-pstyle3">No changes</p>
+                </div>
+                <div id="g-ai0-10" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:80.9404%;margin-top:-13.2px;left:79.814%;width:54px;">
+                    <p class="g-pstyle3">N/A</p>
+                </div>
+                <div id="g-ai0-11" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:80.9404%;margin-top:-13.2px;left:42.7635%;width:130px;">
+                    <p class="g-pstyle3">Yes changes</p>
+                </div>
+                <div id="g-ai0-12" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:89.7311%;margin-top:-16.1px;left:43.7015%;width:334px;">
+                    <p class="g-pstyle2">Types of Scholarship Changes</p>
+                </div>
+            </div>
+
+            <!-- Artboard: medium -->
+            <div id="g-scholarship-medium" class="g-artboard" style="width:490px; height:369px;"
+                data-aspect-ratio="1.328" data-min-width="490" data-max-width="699">
+                <div style=""></div>
+                <img id="g-scholarship-medium-img" class="g-aiImg" alt="" src="scholarship-medium.png" />
+                <div id="g-ai1-1" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:11.0332%;margin-top:-31.7px;left:1.418%;width:500px;">
+                    <p class="g-pstyle0">Universities that have removed or altered </p>
+                    <p class="g-pstyle0">scholarships </p>
+                </div>
+                <div id="g-ai1-2" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:28.0883%;margin-top:-12.6px;left:23.98%;width:42px;">
+                    <p class="g-pstyle1">25</p>
+                </div>
+                <div id="g-ai1-3" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:39.1995%;margin-top:-12.6px;left:24.1034%;width:42px;">
+                    <p class="g-pstyle1">20</p>
+                </div>
+                <div id="g-ai1-4" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:50.0396%;margin-top:-12.6px;left:23.9816%;width:42px;">
+                    <p class="g-pstyle1">15</p>
+                </div>
+                <div id="g-ai1-5" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:53.5602%;margin-top:-24.6px;left:3.5519%;width:120px;">
+                    <p class="g-pstyle2">Number of </p>
+                    <p class="g-pstyle2">Universities</p>
+                </div>
+                <div id="g-ai1-6" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:60.0667%;margin-top:-12.6px;left:24.2126%;width:42px;">
+                    <p class="g-pstyle1">10</p>
+                </div>
+                <div id="g-ai1-7" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:73.8336%;margin-top:-23.4px;left:25.7358%;width:32px;">
+                    <p class="g-pstyle1">5</p>
+                </div>
+                <div id="g-ai1-8" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:82.0179%;margin-top:-12.6px;left:25.5939%;width:32px;">
+                    <p class="g-pstyle1">0</p>
+                </div>
+                <div id="g-ai1-9" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:88.3368%;margin-top:-11px;left:57.795%;width:107px;">
+                    <p class="g-pstyle3">No changes</p>
+                </div>
+                <div id="g-ai1-10" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:88.3368%;margin-top:-11px;left:84.9765%;width:49px;">
+                    <p class="g-pstyle3">N/A</p>
+                </div>
+                <div id="g-ai1-11" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:88.3368%;margin-top:-11px;left:34.0882%;width:113px;">
+                    <p class="g-pstyle3">Yes changes</p>
+                </div>
+                <div id="g-ai1-12" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:96.381%;margin-top:-12.6px;left:39.3056%;width:266px;">
+                    <p class="g-pstyle1">Types of Scholarship Changes</p>
+                </div>
+            </div>
+
+            <!-- Artboard: mobile -->
+            <div id="g-scholarship-mobile" class="g-artboard" style="max-width: 375px;max-height: 505px"
+                data-aspect-ratio="0.743" data-min-width="0" data-max-width="489">
+                <div style="padding: 0 0 134.6133% 0;"></div>
+                <img id="g-scholarship-mobile-img" class="g-aiImg" alt="" src="scholarship-mobile.png" />
+                <div id="g-ai2-1" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:7.6689%;margin-top:-31.7px;left:2.1565%;width:377px;">
+                    <p class="g-pstyle0">Universities that have removed</p>
+                    <p class="g-pstyle0">or altered scholarships </p>
+                </div>
+                <div id="g-ai2-2" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:19.9322%;margin-top:-13.6px;left:40.6161%;width:211px;">
+                    <p class="g-pstyle1">Number of universities</p>
+                </div>
+                <div id="g-ai2-3" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="transform: matrix(0.9997,0.0262,-0.0262,0.9997,0,0);transform-origin: 50% 53.9538206108344%;-webkit-transform: matrix(0.9997,0.0262,-0.0262,0.9997,0,0);-webkit-transform-origin: 50% 53.9538206108344%;-ms-transform: matrix(0.9997,0.0262,-0.0262,0.9997,0,0);-ms-transform-origin: 50% 53.9538206108344%;top:25.2864%;margin-top:-12.6px;left:91.0185%;margin-left:-21px;width:42px;">
+                    <p class="g-pstyle2">25</p>
+                </div>
+                <div id="g-ai2-4" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="transform: matrix(0.9995,-0.0296,0.0296,0.9996,0,0);transform-origin: 50% 53.9538206108344%;-webkit-transform: matrix(0.9995,-0.0296,0.0296,0.9996,0,0);-webkit-transform-origin: 50% 53.9538206108344%;-ms-transform: matrix(0.9995,-0.0296,0.0296,0.9996,0,0);-ms-transform-origin: 50% 53.9538206108344%;top:25.6826%;margin-top:-12.6px;left:59.0167%;margin-left:-21px;width:42px;">
+                    <p class="g-pstyle2">10</p>
+                </div>
+                <div id="g-ai2-5" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="transform: matrix(0.9998,-0.0182,0.0187,0.9998,0,0);transform-origin: 50% 53.9533626746969%;-webkit-transform: matrix(0.9998,-0.0182,0.0187,0.9998,0,0);-webkit-transform-origin: 50% 53.9533626746969%;-ms-transform: matrix(0.9998,-0.0182,0.0187,0.9998,0,0);-ms-transform-origin: 50% 53.9533626746969%;top:25.6829%;margin-top:-12.6px;left:69.4172%;margin-left:-21px;width:42px;">
+                    <p class="g-pstyle2">15</p>
+                </div>
+                <div id="g-ai2-6" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:27.8237%;margin-top:-23.5px;left:47.2271%;width:32px;">
+                    <p class="g-pstyle3">5</p>
+                </div>
+                <div id="g-ai2-7" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:25.6954%;margin-top:-12.7px;left:36.4372%;width:32px;">
+                    <p class="g-pstyle3">0</p>
+                </div>
+                <div id="g-ai2-8" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:30.4366%;margin-top:-12.6px;left:72.7698%;width:42px;">
+                    <p class="g-pstyle3">20</p>
+                </div>
+                <div id="g-ai2-9" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:40.8009%;margin-top:-11px;left:9.032%;width:113px;">
+                    <p class="g-pstyle4">Yes changes</p>
+                </div>
+                <div id="g-ai2-10" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:64.3746%;margin-top:-11px;left:10.5859%;width:107px;">
+                    <p class="g-pstyle4">No changes</p>
+                </div>
+                <div id="g-ai2-11" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                    style="top:85.1749%;margin-top:-11px;left:22.7995%;width:49px;">
+                    <p class="g-pstyle4">N/A</p>
+                </div>
+            </div>
+
+        </div>
+        <section class="intro-section" id="services-section">
+            <div class="container">
+                <section class="row justify-content-lg-center align-items-center">
+                    <iframe title="Scholarships the Equal Protection Project has filed complaints against"
+                        aria-label="Table" id="datawrapper-chart-7hKWX" src="https://datawrapper.dwcdn.net/7hKWX/1/"
+                        scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;"
+                        height="975" data-external="1"></iframe>
+                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r, i = 0; r = e[i]; i++)if (r.contentWindow === a.source) { var d = a.data["datawrapper-height"][t] + "px"; r.style.height = d } } })) }();
+                    </script>
+                </section>
+            </div>
+            <script type="text/javascript">
+                (function (containerId, opts) {
+                    if (!('querySelector' in document)) return;
+                    var container = document.getElementById(containerId);
+                    var nameSpace = opts.namespace || '';
+                    var onResize = throttle(update, 200);
+                    var waiting = !!window.IntersectionObserver;
+                    var observer;
+                    update();
+
+                    document.addEventListener('DOMContentLoaded', update);
+                    window.addEventListener('resize', onResize);
+
+                    // NYT Scoop-specific code
+                    if (opts.setup) {
+                        opts.setup(container).on('cleanup', cleanup);
+                    }
+
+                    function cleanup() {
+                        document.removeEventListener('DOMContentLoaded', update);
+                        window.removeEventListener('resize', onResize);
+                        if (observer) observer.disconnect();
+                    }
+
+                    function update() {
+                        var artboards = selectChildren('.' + nameSpace + 'artboard[data-min-width]', container),
+                            width = Math.round(container.getBoundingClientRect().width);
+
+                        // Set artboard visibility based on container width
+                        artboards.forEach(function (el) {
+                            var minwidth = el.getAttribute('data-min-width'),
+                                maxwidth = el.getAttribute('data-max-width');
+                            if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                                if (!waiting) {
+                                    selectChildren('.' + nameSpace + 'aiImg', el).forEach(updateImgSrc);
+                                }
+                                el.style.display = 'block';
+                            } else {
+                                el.style.display = 'none';
+                            }
+                        });
+
+                        // Initialize lazy loading on first call
+                        if (waiting && !observer) {
+                            if (elementInView(container)) {
+                                waiting = false;
+                                update();
+                            } else {
+                                observer = new IntersectionObserver(onIntersectionChange, {});
+                                observer.observe(container);
+                            }
+                        }
+                    }
+
+                    function elementInView(el) {
+                        var bounds = el.getBoundingClientRect();
+                        return bounds.top < window.innerHeight && bounds.bottom > 0;
+                    }
+
+                    // Replace blank placeholder image with actual image
+                    function updateImgSrc(img) {
+                        var src = img.getAttribute('data-src');
+                        if (src && img.getAttribute('src') != src) {
+                            img.setAttribute('src', src);
+                        }
+                    }
+
+                    function onIntersectionChange(entries) {
+                        // There may be multiple entries relating to the same container
+                        // (captured at different times)
+                        var isIntersecting = entries.reduce(function (memo, entry) {
+                            return memo || entry.isIntersecting;
+                        }, false);
+                        if (isIntersecting) {
+                            waiting = false;
+                            // update: don't remove -- we need the observer to trigger an update
+                            // when a hidden map becomes visible after user interaction
+                            // (e.g. when an accordion menu or tab opens)
+                            // observer.disconnect();
+                            // observer = null;
+                            update();
+                        }
+                    }
+
+                    function selectChildren(selector, parent) {
+                        return parent ? Array.prototype.slice.call(parent.querySelectorAll(selector)) : [];
+                    }
+
+                    // based on underscore.js
+                    function throttle(func, wait) {
+                        var timeout = null, previous = 0;
+                        function run() {
+                            previous = Date.now();
+                            timeout = null;
+                            func();
+                        }
+                        return function () {
+                            var remaining = wait - (Date.now() - previous);
+                            if (remaining <= 0 || remaining > wait) {
+                                clearTimeout(timeout);
+                                run();
+                            } else if (!timeout) {
+                                timeout = setTimeout(run, remaining);
+                            }
+                        };
+                    }
+                })("g-scholarship-box", { namespace: "g-", setup: window.setupInteractive || window.getComponent });
+            </script>
+
+
+
+
+
+
+            <script type="text/javascript">
+                (function (containerId, opts) {
+                    if (!('querySelector' in document)) return;
+                    var container = document.getElementById(containerId);
+                    var nameSpace = opts.namespace || '';
+                    var onResize = throttle(update, 200);
+                    var waiting = !!window.IntersectionObserver;
+                    var observer;
+                    update();
+
+                    document.addEventListener('DOMContentLoaded', update);
+                    window.addEventListener('resize', onResize);
+
+                    // NYT Scoop-specific code
+                    if (opts.setup) {
+                        opts.setup(container).on('cleanup', cleanup);
+                    }
+
+                    function cleanup() {
+                        document.removeEventListener('DOMContentLoaded', update);
+                        window.removeEventListener('resize', onResize);
+                        if (observer) observer.disconnect();
+                    }
+
+                    function update() {
+                        var artboards = selectChildren('.' + nameSpace + 'artboard[data-min-width]', container),
+                            width = Math.round(container.getBoundingClientRect().width);
+
+                        // Set artboard visibility based on container width
+                        artboards.forEach(function (el) {
+                            var minwidth = el.getAttribute('data-min-width'),
+                                maxwidth = el.getAttribute('data-max-width');
+                            if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                                if (!waiting) {
+                                    selectChildren('.' + nameSpace + 'aiImg', el).forEach(updateImgSrc);
+                                }
+                                el.style.display = 'block';
+                            } else {
+                                el.style.display = 'none';
+                            }
+                        });
+
+                        // Initialize lazy loading on first call
+                        if (waiting && !observer) {
+                            if (elementInView(container)) {
+                                waiting = false;
+                                update();
+                            } else {
+                                observer = new IntersectionObserver(onIntersectionChange, {});
+                                observer.observe(container);
+                            }
+                        }
+                    }
+
+                    function elementInView(el) {
+                        var bounds = el.getBoundingClientRect();
+                        return bounds.top < window.innerHeight && bounds.bottom > 0;
+                    }
+
+                    // Replace blank placeholder image with actual image
+                    function updateImgSrc(img) {
+                        var src = img.getAttribute('data-src');
+                        if (src && img.getAttribute('src') != src) {
+                            img.setAttribute('src', src);
+                        }
+                    }
+
+                    function onIntersectionChange(entries) {
+                        // There may be multiple entries relating to the same container
+                        // (captured at different times)
+                        var isIntersecting = entries.reduce(function (memo, entry) {
+                            return memo || entry.isIntersecting;
+                        }, false);
+                        if (isIntersecting) {
+                            waiting = false;
+                            // update: don't remove -- we need the observer to trigger an update
+                            // when a hidden map becomes visible after user interaction
+                            // (e.g. when an accordion menu or tab opens)
+                            // observer.disconnect();
+                            // observer = null;
+                            update();
+                        }
+                    }
+
+                    function selectChildren(selector, parent) {
+                        return parent ? Array.prototype.slice.call(parent.querySelectorAll(selector)) : [];
+                    }
+
+                    // based on underscore.js
+                    function throttle(func, wait) {
+                        var timeout = null, previous = 0;
+                        function run() {
+                            previous = Date.now();
+                            timeout = null;
+                            func();
+                        }
+                        return function () {
+                            var remaining = wait - (Date.now() - previous);
+                            if (remaining <= 0 || remaining > wait) {
+                                clearTimeout(timeout);
+                                run();
+                            } else if (!timeout) {
+                                timeout = setTimeout(run, remaining);
+                            }
+                        };
+                    }
+                })("g-scholarship-box", { namespace: "g-", setup: window.setupInteractive || window.getComponent });
+            </script>
+            <footer class="site-footer">
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-7 col-12 text-center mx-auto">
-                            <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
-                                <span>Tracking scholarships </span>
-                                <span class="cd-words-wrapper">
-                                    <b class="is-visible">for International Students</b>
-                                    <b>for Domestic Students</b>
-                                    <b>under investigation</b>
-                                </span>
-                            </h1>
 
-                            <a class="custom-btn btn button button--atlas smoothscroll me-3" href="#intro-section">
-                                <span>Financial Aid database for international students</span>
-                            </a>
 
-                            <a class="custom-btn custom-border-btn custom-btn-bg-white btn button button--pan smoothscroll" href="#services-section">
-                                <span>Financial aid map </span>
-                            </a>
+                        <div class="site-footer-bottom">
                         </div>
+            </footer>
 
-                    </div>
-                </div>
+            <!-- JAVASCRIPT FILES -->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.backstretch.min.js"></script>
+            <script src="js/counter.js"></script>
+            <script src="js/countdown.js"></script>
+            <script src="js/init.js"></script>
+            <script src="js/modernizr.js"></script>
+            <script src="js/animated-headline.js"></script>
+            <script src="js/custom.js"></script>
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L40,229.3C80,235,160,245,240,250.7C320,256,400,256,480,240C560,224,640,192,720,176C800,160,880,160,960,138.7C1040,117,1120,75,1200,80C1280,85,1360,139,1400,165.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-            </section>
+</body>
 
-
-            <section class="intro-section" id="intro-section">
-                <div class="container">
-                    <div class="row justify-content-lg-center align-items-center">
-
-                        <div class="col-lg-6 col-12">
-                            <h2 class="mb-4">Scholarships for international students</h2>
-
-                            <p>I scraped <a href="https://static1.squarespace.com/static/5d1ad956be52e800010a2502/t/64c9494d6759433a8746fda9/1690913102131/Financial+Aid+for+International+Noncitizens+Class+of+2026.pdf">PDFs</a> and <a href="http://127.0.0.1:3000/index.html#services-section">CollegeVine</a> to track all the scholarships provided to international students in U.S colleges from 2023. I will update the database as information rolls in! In the meantime check out the table below:</p>
-                        </div>
-
-
-<iframe title="List of U.S universities providing financial aid to international students in 2023 " aria-label="Table"
-    id="datawrapper-chart-jtNuK" src="https://datawrapper.dwcdn.net/jtNuK/2/" scrolling="no" frameborder="0"
-    style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe>
-<script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r, i = 0; r = e[i]; i++)if (r.contentWindow === a.source) { var d = a.data["datawrapper-height"][t] + "px"; r.style.height = d } } })) }();
-</script>
-
-                        
-                    </div>
-                </div>
-            </section>
-
-            <section class="intro-section" id="services-section">
-                <div class="container">
-                    <div class="row justify-content-lg-center align-items-center">
-            
-                        <div class="col-lg-6 col-12">
-                            <h2 class="mb-4">U.S Map that shows all universities providing financial aid to international students</h2>
-                            <p>The map helps international students and those curious on where institutions are located, to find the universities that provide financial aid or merit scholarships to students on visas.</p>
-                            <iframe src="map.html" width="100%" height="600" style="border:none;"></iframe>
-
-
-
-
-
-
-            
-        </main>
-
-
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-
-
-
-            <div class="site-footer-bottom">
-            </div>
-        </footer>
-
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.backstretch.min.js"></script>
-        <script src="js/counter.js"></script>
-        <script src="js/countdown.js"></script>
-        <script src="js/init.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script src="js/animated-headline.js"></script>
-        <script src="js/custom.js"></script>
-
-    </body>
 </html>
